@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Payroll Form</title>
-    <link rel="stylesheet" href="new_payroll_form.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header-content header">
@@ -17,7 +17,6 @@
         </div>
         </div>
     </header>
-    <!--UC2 Ability to create a Form Header and the Input Text Element for Name-->
     <div class="form-content">
         <form class="form" action="#" onsubmit="save();return false">
         <div class="form-head">
@@ -28,7 +27,6 @@
             <input class="input" type="text" id="name" name="name" placeholder="Your name....." required>
             <error-output class="text-error" for="text"></error-output>
         </div>
-        <!--UC3 Ability to specify the Profile Pic in the Form-->
         <div class="row-content">
             <label class="label text" for="profile">Profile image</label>
             <div class="profile-radio-content">
@@ -58,7 +56,6 @@
                 </label>
             </div>
         </div>
-        <!--UC4 Ability to specify the gender as radio button, department as checkbox and Salary as range indicator-->
         <div class="row-content">
             <label class="label text" for="gender">Gender: </label>
             <div>
@@ -88,7 +85,6 @@
             <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
             <output class="salary-output text" for="salary">400000</output>
         </div>
-    <!--Ability to specify the start date with Day, Month and Year as Select Input Item-->
     <div class="row-content">
         <label class="label text" for="startDate">Start Date: </label>
         <div class="label text">
@@ -150,7 +146,6 @@
             </select>
         </div>
     </div>
-    <!--Ability to add Notes as well as cancel, reset and submit button so as to do some action on form entry-->
     <div class="row-content">
         <label class="label text" for="notes">Notes</label>
         <textarea id="notes" class="input" name="Notes" placeholder="" style="height:100px"></textarea>
@@ -164,6 +159,6 @@
     </div>    
 </form>
     </div>
-    <script src="new_payroll_form.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
