@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employee Payroll Form</title>
+    <title>Employee Payroll Application</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,11 +20,11 @@
     <div class="form-content">
         <form class="form" action="#" onsubmit="save();return false">
         <div class="form-head">
-            <h2>Employee Payroll Form</h2>
+            <h2>Employee Details Form</h2>
         </div>
         <div class="row-content">
             <label class="label text" for="name">Name: </label>
-            <input class="input" type="text" id="name" name="name" placeholder="Your name....." required>
+            <input class="input" type="text" id="name" name="name" placeholder="First, Middle and Last Name" required>
             <error-output class="text-error" for="text"></error-output>
         </div>
         <div class="row-content">
@@ -63,6 +63,8 @@
                 <label class="text" for="male">Male</label>
                 <input type="radio" id="female" name="gender" value="female">
                 <label class="text" for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label class="text" for="other">Other</label>
             </div>
         </div>
         <div class="row-content">
@@ -82,11 +84,11 @@
         </div>
         <div class="row-content">
             <label class="label text" for="salary">Choose your salary: </label>
-            <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
-            <output class="salary-output text" for="salary">400000</output>
+            <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="10000" value="300000">
+            <output class="salary-output text" for="salary"></output>
         </div>
     <div class="row-content">
-        <label class="label text" for="startDate">Start Date: </label>
+        <label class="label text" for="startDate">Joining Date: </label>
         <div class="label text">
             <select id="day" name="Day">
                 <option value="1">1</option>
@@ -143,15 +145,14 @@
                 <option value="2018">2018</option>
                 <option value="2017">2017</option>
                 <option value="2016">2016</option>
+                <option value="2019">2015</option>
+                <option value="2018">2014</option>
+                <option value="2017">2013</option>
+                <option value="2016">2012</option>
             </select>
         </div>
     </div>
-    <div class="row-content">
-        <label class="label text" for="notes">Notes</label>
-        <textarea id="notes" class="input" name="Notes" placeholder="" style="height:100px"></textarea>
-    </div>
     <div class="buttonParent">
-        <a href="index.html" class="resetButton button cancelButton">Cancel</a>
         <div class="submit-reset">
             <button type="submit" class="button submitButton" id="submitButton">Submit</button>
             <button type="reset" class="resetButton button">Reset</button>
